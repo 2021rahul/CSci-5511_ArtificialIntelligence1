@@ -1,1 +1,1 @@
-# CSci-5511-Artificaila-Intelligence1
+# CSci-5511-Artificial-Intelligence1
