@@ -1,0 +1,14 @@
+[1]> (load "solution1.lsp")
+;; Loading file solution1.lsp ...
+;; Loaded file solution1.lsp
+T
+[2]> (functionatom '(a (b c) (((d) e f))))
+(A B C D E F)
+[3]> (functionatom '(a b c d e f))
+(A B C D E F)
+[4]> (functionatom '((a (b (c d) e)) ((f))))
+(A B C D E F)
+[5]> (functionatom '((a b) (c d) (e f)))
+(A B C D E F)
+[6]> (functionatom '())
+NIL
