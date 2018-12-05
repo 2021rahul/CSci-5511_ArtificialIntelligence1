@@ -1,0 +1,186 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/2021rahul/Documents/Fall2018/5525_ML/CSci-5525-Machine-Learning/HW2/SOLUTION/SRC/algorithm.py",
+		"/Users/2021rahul/Documents/Fall2018/5525_ML/Midterm/dataset.csv",
+		"/Users/2021rahul/Documents/Fall2018/5511_AI1/Assignments/Extra Credit/get_depth.lsp",
+		"/Users/2021rahul/Documents/Fall2018/5523_DM/CSci-5523-Data-Mining/Project_1 copy 2/ghosh128 2/main.cpp",
+		"/Users/2021rahul/Documents/Fall2018/5523_DM/CSci-5523-Data-Mining/Project_1 copy 2/ghosh128/Makefile",
+		"/Users/2021rahul/Documents/Fall2018/5525_ML/CSci-5525-Machine-Learning/HW1/SOLUTION/SRC/utils.py",
+		"/Users/2021rahul/Documents/Fall2018/5525_ML/CSci-5525-Machine-Learning/HW1/ReadMe.md",
+		"/Users/2021rahul/Documents/CSci-5525-Machine-Learning/HW1/SOLUTION/src/utils.py",
+		"/Users/2021rahul/Documents/CSci-5525-Machine-Learning/HW1/SOLUTION/src/dump.py",
+		"/Users/2021rahul/Documents/Fall2018/5525_ML/CSci-5525-Machine-Learning/HW1/SOLUTION/src/utils.py",
+		"/Users/2021rahul/Documents/CSci-5525-Machine-Learning/HW1/SOLUTION/src/algorithm.py",
+		"/Volumes/Seagate Bac/Github_Finished/DataStructures-Algorithms/SORTING/C++/main.cpp",
+		"/Volumes/Seagate Bac/Github_Finished/DataStructures-Algorithms/SORTING/C++/sort.h",
+		"/Volumes/Seagate Bac/Github_Finished/Deep_Learning/NEURAL_NETWORK/TensorFlow/SOURCE/._config.py",
+		"/Volumes/Seagate Bac/Github_Finished/Deep_Learning/NEURAL_NETWORK/TensorFlow/SOURCE/data.py",
+		"/Volumes/Seagate Bac/Github_Finished/DataStructures-Algorithms/SORTING/PYTHON/main.py",
+		"/Volumes/Seagate Bac/Github_Finished/DataStructures-Algorithms/SORTING/PYTHON/Sort.py",
+		"/Volumes/Seagate Bac/Github_Finished/DataStructures-Algorithms/.gitignore",
+		"/Volumes/Seagate Bac/Github_Finished/DataStructures-Algorithms/LINKED_LISTS/Node.h",
+		"/Volumes/Seagate Bac/Github_Finished/DataStructures-Algorithms/LINKED_LISTS/main.cpp",
+		"/Volumes/Seagate Bac/Github_Finished/DataStructures-Algorithms/LINKED_LISTS/LinkedList.h",
+		"/Volumes/Seagate Bac/Github_Finished/DataStructures-Algorithms/LINKED_LISTS/PYTHON/main.py"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "get_depth.sublime-project",
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
