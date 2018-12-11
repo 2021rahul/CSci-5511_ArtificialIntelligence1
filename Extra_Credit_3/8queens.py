@@ -1,4 +1,6 @@
 import numpy as np
+import random
+from operator import itemgetter
 
 def get_board(state):
 	board = np.zeros((8, 8))
@@ -7,32 +9,21 @@ def get_board(state):
 		board[i,j] = 1
 	return board
 
-def get_successors(state):
-	successors = []
-	for i in range(8):
-		successors.append(state+str(i))
-	return successors
-
 def is_valid(coord):
 	valid = True
 	if coord[0]<0 or coord[0]>7 or coord[1]<0 or coord[1]>7:
 		valid = False
 	return valid
 
-def check_valid_position(position):
-	valid = True
-	if position[0]<0 or position[0]>2 or position[1]<0 or position[1]>2:
-		valid = False
-	return valid
-
 def get_row(coord):
 	positions = []
-	for col in range(coord[1]+1,8):
-		positions.append([coord[0],col])
+	for col in range(0,8):
+		if col!=coord[1]:
+			positions.append([coord[0],col])
 	return positions
 
 def get_diagonal(coord):
-	directions = [[-1, 1], [1, 1]]
+	directions = [[-1, 1], [1, 1], [-1, -1], [1, -1]]
 	positions = []
 	for direction in directions:
 		new_coord = [coord[0]+direction[0], coord[1]+direction[1]]
@@ -46,45 +37,66 @@ def get_check_positions(coord):
 	positions = positions + get_diagonal(coord)
 	return positions
 
-def evaluate(state):
+def get_conflicts(state):
 	board = get_board(state)
-	h = 0
+	attack = []
 	for j, i in enumerate(state):
 		i = int(i)
+		h = 0
 		positions = get_check_positions([i, j])
 		for position in positions:
 			h += board[position[0], position[1]]
-	return h
+		attack.append(h)
+	return attack
 
-def get_lowest_f_state(opened_list):
-    sorted_h = []
-    for key in opened_list.keys():
-        el = [key, opened_list[key]]
-        sorted_h.append(el)
-    sorted_h = np.asarray(sorted_h)
-    sorted_h = sorted_h[np.argsort(sorted_h[:, 1])]
-    return sorted_h[0, 0]
+def get_col_val(state, col):
+	board = get_board(state)
+	vals = []
+	for val in range(8):
+		h = 0
+		positions = get_check_positions([val, col])
+		for position in positions:
+			h += board[position[0], position[1]]
+		vals.append(h)
+	col_val = min(enumerate(vals), key=itemgetter(1))[0]
+	return col_val
 
-def greedy():
-	opened = {}
-	closed = {}
-	state = "3"
-	opened[state] = evaluate(state)
-	while opened:
-		state = get_lowest_f_state(opened)
-		closed[state] = opened.pop(state)
+def is_solved(conflicts):
+	solved = True
+	for conflict in conflicts:
+		if conflict!=0:
+			solved = False
+	return solved
 
-		if len(state)==8 and not evaluate(state):
-			print(state)
-			return
+def iterative_repair(state):
+	steps = 0
+	while True:
 		print(state)
-		successors = get_successors(state)
-		for successor in successors:
-			if successor in closed.keys():
-				continue
-			successor_info = evaluate(successor)
-			opened[successor] = successor_info
+		steps += 1
+		print(steps)
+		conflicts = get_conflicts(state)
+		if is_solved(conflicts):
+			return
 
+		col = max(enumerate(conflicts), key=itemgetter(1))[0]
+		col_val = get_col_val(state, col)
+		new_state = state.copy()
+		new_state[col] = col_val
+		if new_state == state:
+			state = generate_board()
+			# steps = 0
+		else:
+			state = new_state
+
+def generate_board():
+	state = random.sample(range(0,8), 8)
+	return state
 
 if __name__ == "__main__":
-	greedy()
+	start = generate_board()
+	iterative_repair(start)
+
+
+
+
+

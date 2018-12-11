@@ -50,7 +50,8 @@
 			((> i 3))
 			(setf newcoord (mapcar '+ coord (nth i directions)))
 			(if (check_valid_positions newcoord)
-				(setf newstates (cons (get_new_state state coord newcoord) newstates))))
+				(setf newstates (cons (get_new_state state coord newcoord) newstates)))
+		)
 		newstates
 	)
 )
@@ -155,7 +156,7 @@
 ; Driver function
 (defun main ()
 	(setf goal '(1 2 3 4 5 6 7 8 0))
-	(setf start '(0 1 3 4 5 2 7 8 6))
+	(setf start '(4 2 5 0 1 3 7 8 6))
 	(format t "Goal State ~S~%" goal)
 	(format t "Start State ~S~%" start)
 	(if (is_solvable start)
